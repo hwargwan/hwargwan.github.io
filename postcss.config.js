@@ -27,7 +27,7 @@ module.exports = {
             preset: 'default',
         }),
         purgecss({
-            content: ['dist/**/*.html','dist/**/*.php'],
+            content: ['docs/**/*.html','docs/**/*.php'],
             extractors: [{
                 extractor: TailwindExtractor,
                 extensions: ["html", "js", "php", "vue"]
