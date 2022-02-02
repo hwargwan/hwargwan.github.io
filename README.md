@@ -1,39 +1,54 @@
-# [Tailwind Toolbox](https://www.tailwindtoolbox.com/) - [Landing Page Template](https://www.tailwindtoolbox.com/templates/landing-page)
+# [Tailwind Toolbox](https://www.tailwindtoolbox.com/) - [Starter Template](https://www.tailwindtoolbox.com/setup)
 
-[Landing Page](https://www.tailwindtoolbox.com/templates/landing-page) is an open source, generic landing page template for [Tailwind CSS](https://tailwindcss.com/) created by [Tailwind Toolbox](https://www.tailwindtoolbox.com/).
+It's pretty straight forward to setup [Tailwind CSS](https://www.tailwindcss.com/) and give it a test spin using the CDN version. However, as mentioned on the Tailwind site, you need to setup Tailwind using npm in order to start customising Tailwind.
 
-![Landing Page](https://www.tailwindtoolbox.com/templates/landing-page.png)
+*Note: This starter template is for Tailwind CSS version 1 beta 3 (which is pretty much the [final version](https://twitter.com/adamwathan/status/1108450684783849472))
+
+If you want the starter template for version 0.7.4, then please [download it from here](https://github.com/tailwindtoolbox/StarterTemplate/archive/v0-7-4.zip)*
+
+## Setup Guide
+* Download [Node/npm](https://nodejs.org/en/download/)
+* Download the [Tailwind Starter Template](https://github.com/tailwindtoolbox/StarterTemplate/archive/master.zip)
+* Open ```package.json``` and then edit the follow section of the file to match your project
+
+```"name": "TailwindStarterTemplate",
+"version": "1.0.0",
+"description": "Tailwind Starter Template",
+"license" : "MIT",
+"repository": {
+    "type" : "git",
+    "url" : "https://github.com/tailwindtoolbox/StarterTemplate.git"
+},
+```
+
+Refer to https://docs.npmjs.com/files/package.json for guidance
+
+* Open your node command prompt/terminal and navigate to your 'project-name' folder and create the `node_modules` directory
+
+   ```npm install or npm update```
+
+* Refresh the Tailwind.js file
+
+   ```npm run del:js && npm run create:js```
+
+* Re-create the initial css file
+
+   ```npm run dev:css```
+
+* Start building your website using the starter template in the dist folder.
 
 
-## Getting Started
 
-Choose one of the following options to get started:
-* [Download the latest release](https://github.com/tailwindtoolbox/Landing-Page/archive/master.zip)
-* Clone the repo: `git clone https://github.com/tailwindtoolbox/Landing-Page.git`
-* Fork the repo
 
-## Using the Template
+## Tweaking
+* Customise the tailwind.config.js and tailwind.config.css to create the tailwind.css for your project
+* Use purgecss/cssnano to remove unused CSS and minify the final CSS file
 
-The template is just a HTML file using a full CDN hosted Tailwind CSS file.
-
-To get the best out of Tailwind CSS, you need to really start customising it.
-Take a look at our [setup guide](https://www.tailwindtoolbox.com/setup) to start tweaking!
-
-## Sites created using this template
-
-* [Pilotmail.io](https://pilotmail.io)
-* [Routepath.app](https://routepath.app)
-* [LedgerSight.com](https://ledgersight.com)
-* [AnonAddy.com](https://anonaddy.com)
-* [MentorCV.com](https://mentorcv.com)
-* [MakerMetrics.co](https://makermetrics.co)
-* [Nodewood.com](https://nodewood.com)
-* [X-Wing AI](https://xwing.app)
-* [Scholarship Spy](https://scholarshipspy.com)
+Refer to the [full setup guide for detailed instructions](https://www.tailwindtoolbox.com/setup)
 
 ## Bugs and Issues
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/tailwindtoolbox/Landing-Page/issues/new) here on GitHub.
+Have a bug, suggestion or question? [Open a new issue](https://github.com/tailwindtoolbox/StarterTemplate/issues/new) here on GitHub.
 
 ## Creator
 
@@ -44,14 +59,3 @@ Have a bug or an issue with this template? [Open a new issue](https://github.com
 * https://github.com/tailwindtoolbox
 
 Tailwind Toolbox is based on the [Tailwind CSS](https://www.tailwindcss.com/) framework created by [Adam Wathan](https://twitter.com/adamwathan), [Jonathan Reinink](https://twitter.com/reinink), [David Hemphill](https://twitter.com/davidhemphill) and [Steve Schoger](https://twitter.com/steveschoger)
-
-
-## Image Attribution
-
-[Hero vector created by freepik.com](https://www.freepik.com/free-vector/isometric-education-illustration_3940819.htm#page=1&query=isometric%20plane&position=1)
-
-Free for personal and commercial purpose with attribution
-
-## Copyright and License
-
-Copyright 2018-2020 Astrava.Solutions Ltd. Code released under the MIT license.
